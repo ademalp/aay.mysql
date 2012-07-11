@@ -6,7 +6,7 @@
 class aaymysql
 {
     /**
-     * DB connection
+     * DB connection resource
      *
      * @var resource
      */
