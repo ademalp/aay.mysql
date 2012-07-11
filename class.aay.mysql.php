@@ -178,7 +178,7 @@ class aaymysql
     {
         $mt = $this->num_rows();
         $ts = (int)($mt / $limit);
-        $ts = $mt % $limit ? $ts + 1 : $ts;
+        $mt % $limit ? $ts++ : "";
         $this->resource = $this->query($this->lastquery . " limit $start, $limit");
         return $ts;
     }
